@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8x8 LED Tetris – John Paul Aglubat</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .project-container { max-width: 900px; margin: 2rem auto; padding: 1rem; }
+    .project-meta { color: var(--muted); margin-bottom: 1.5rem; }
+    iframe { width: 100%; height: 480px; max-width: 720px; border: none; margin-bottom: 1.5rem; }
+    .back-link { margin-bottom: 2rem; display: inline-block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>8×8 LED Tetris Game</h1>
+  <nav>
+    <a class="back-link" href="/index.html">← Back to Home</a>
+  </nav>
+</header>
+
+<section>
+    <h2>Description</h2>
+    <p>
+        For my final project in EE 271, I implemented <strong>Tetris</strong> on a matrix of 8×8 LEDs. The goal was to use the DE1-SoC FPGA to control the LED array and create a playable version of Tetris. The project involved designing the logic in Quartus, managing the LED matrix scanning, and implementing game mechanics such as piece rotation, line clearing, and scoring.
+    </p>
+
+    <p>The project video demonstrates the game running on the actual hardware:</p>
+    <iframe src="https://www.youtube.com/embed/5WoX8gejgTE" title="8x8 LED Tetris Game Demo" allowfullscreen></iframe>
+
+    <p><i>Note: The switch I flipped just forced a Hero piece also known as the I-piece tetromino to be the next piece rather a random one</i></p>
+
+    <p><strong>Course:</strong> EE 271 – Digital Circuits and Systems, University of Washington</p>
+    <p><strong>Hardware:</strong> DE1-SoC Altera FPGA Development Board</p>
+    <p><strong>Software:</strong> Quartus 14.0 and 16.0</p>
+    <p><strong>Project Type:</strong> Final Project / Open-ended Design</p>
+    <p><strong>Project Files:</strong> <a href="https://github.com/johnpa137/Mat8x8_LED_Tetris">Github</a></p>
+</section>
+
+<footer>
+© <span id="year"></span> John Paul Aglubat · Built with plain HTML & CSS
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

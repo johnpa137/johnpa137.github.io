@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patent(s) – John Paul Aglubat</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .patent-container { max-width: 900px; margin: 2rem auto; padding: 1rem; }
+    .patent-list { list-style-type: none; padding-left: 0; }
+    .patent-list li { margin-bottom: 1.5rem; }
+    .patent-title { font-weight: bold; font-size: 1.1rem; }
+    .patent-meta { color: var(--muted); font-size: 0.95rem; margin-top: 0.25rem; }
+    .back-link { margin-bottom: 2rem; display: inline-block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Patent(s)</h1>
+  <p>
+    Patent(s) with me listed as the an inventor.
+  </p>
+  <nav>
+    <a class="back-link" href="/index.html">← Back to Home</a>
+  </nav>
+</header>
+
+<main class="patent-container">
+  <ul class="patent-list">
+    <li>
+      <div class="patent-title">
+        Management of Peak Current of Memory Dies in a Memory Sub-System
+      </div>
+      <div class="patent-meta">
+        US Patent 11,216,219 · 2022 · <a href="https://patents.justia.com/patent/11216219" target="_blank" rel="noopener">View Patent</a>
+      </div>
+    </li>
+    <!-- Additional patents can be added here in the same format -->
+  </ul>
+</main>
+
+<footer>
+  © <span id="year"></span> John Paul Aglubat · Built with plain HTML & CSS
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>John Paul Aglubat - Projects</title>
+  <meta name="description" content="Portfolio projects of John Paul Aglubat" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Projects List</h1>
+    <p>
+      List of involved projects.
+    </p>
+    <nav>
+      <a href="/index.html">← Back to Home</a>
+    </nav>
+  </header>
+
+  <section id="projects-list">
+    <div class="grid">
+      <div class="card">
+        <h3>Sklansky ALU</h3>
+        <p>A 16-bit ALU based on the Sklansky Adder.</p>
+        <a href="sklansky_alu_16bit">View project →</a>
+      </div>
+
+      <div class="card">
+        <h3>8x8 LED Tetris</h3>
+        <p>Tetris on an 8x8 LED matrix using a DE1_SoC FPGA Dev Board.</p>
+        <a href="led_tetris_fpga">View project →</a>
+      </div>
+
+      <div class="card">
+        <h3>Canny Edge Detection</h3>
+        <p>Canny Edge Detection algorithm kernels implemented in CUDA C.</p>
+        <a href="canny_edge_detect">View project →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> John Paul Aglubat · Built with plain HTML & CSS
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

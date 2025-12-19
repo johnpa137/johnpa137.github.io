@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>John Paul Aglubat - Portfolio</title>
+  <meta name="description" content="Personal portfolio website" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>John Paul Aglubat</h1>
+    <p>
+      An electrical and computer engineer with a diverse set of skills and interests and a passion for learning and creating.
+    </p>
+    <nav>
+      <a href="projects">Projects</a>
+      <a href="experience">Work Experience</a>
+      <a href="academics">Academics</a>
+      <a href="patents">Patent(s)</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="academics">
+    <h2>Education</h2>
+    <table>
+      <tr><td>University of Washington</td><td>B.S. Electrical Engineering – Seattle, WA – 2018</td></tr>
+      <tr><td>Edmonds Community College</td><td>C/C++ Developer Certificate – Lynnwood, WA – 2015</td></tr>
+    </table>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <table>
+      <tr><td>Boeing</td><td>Microelectronics Test Engineer – Tukwila, WA – Jan 2024 – Present</td></tr>
+      <tr><td>Micron</td><td>Semiconductor Product Engineer – Boise, ID – July 2018 – Dec 2023</td></tr>
+    </table>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <table>
+      <tr><td>Programming & Scripting</td><td>Python, C/C++, C#, Java, Perl</td></tr>
+      <tr><td>Tools</td><td>Git, Cadence Virtuoso, Solidworks, KiCAD, JMP, Infiniium, Vivado, Quartus</td></tr>
+      <tr><td>Specialized Languages</td><td>CUDA, OpenGL, VHDL, SystemVerilog, Verilog</td></tr>
+      <tr><td>Test Frameworks</td><td>pytest, unittest</td></tr>
+      <tr><td>GUI & Visualization Libraries</td><td>PySimpleGUI, tkinter, Dear ImGui, plotly, matplotlib</td></tr>
+      <tr><td>Languages</td><td>English (native), Tagalog (native), Japanese (N4)</td></tr>
+    </table>
+  </section>
+
+  <section id="Quick Links">
+    <h2>Quick Links</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Sklansky ALU</h3>
+        <p>A 16-bit ALU based on the Sklansky Adder.</p>
+        <a href="projects/sklansky_alu_16bit">View project →</a>
+      </div>
+      <div class="card">
+        <h3>8x8 LED Tetris</h3>
+        <p>Tetris on an 8x8 LED on a DE1_SoC FPGA Dev Board.</p>
+        <a href="projects/led_tetris_fpga">View project →</a>
+      </div>
+      <div class="card">
+        <h3>Canny Edge Detection</h3>
+        <p>Canny Edge Detection algorithm kernels implemented in CUDA C.</p>
+        <a href="projects/canny_edge_detect/">View project →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      You can reach me at <a href="mailto:aglubat.jp@gmail.com">aglubat.jp@gmail.com</a>
+      or find me on <a href="https://www.linkedin.com/in/john-paul-aglubat-018730150/">LinkedIn</a>.
+    </p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> John Paul Aglubat · Built with plain HTML & CSS
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

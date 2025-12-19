@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work Experience – John Paul Aglubat</title>
+  <meta name="description" content="Work experience of John Paul Aglubat" />
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    /* Page-specific tweaks */
+    .experience {
+      margin-bottom: 3rem;
+    }
+
+    .experience-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .experience-header h3 {
+      margin: 0;
+    }
+
+    .experience-meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    ul {
+      margin-top: 0.75rem;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    .back-link {
+      margin-top: 2rem;
+      display: inline-block;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Work Experience</h1>
+    <p>
+      Professional experience in microelectronics test, semiconductor device validation and characterization,
+      and automated test development.
+    </p>
+    <nav>
+      <a href="/index.html">← Back to Home</a>
+    </nav>
+  </header>
+
+  <section>
+
+    <div class="experience">
+      <div class="experience-header">
+        <h3>Boeing — Microelectronics Test Engineer</h3>
+        <div class="experience-meta">Tukwila, WA · Jan 2024 – Present</div>
+      </div>
+      <ul>
+        <li>Boeing Research and Technology for Solid State Electronics Development</li>
+        <li>Validated and characterized newly designed microelectronics at wafer and package levels</li>
+        <li>Developed FPGA test modules in VHDL for automated and debug test flows</li>
+        <li>Developed standalone firmware in C/C++ on ARM processors interfacing with FPGAs</li>
+        <li>Integrated USB, AXI, UART, SPI, and I<sup>2</sup>C interfaces into test drivers</li>
+        <li>Developed Python GUIs and drivers for integrated test environments</li>
+        <li>Automated control of oscilloscopes, SMUs, waveform generators, and other lab instruments</li>
+        <li>Authored detailed test procedures aligned with design specifications</li>
+        <li>Developed DSP techniques for complex data modeling</li>
+        <li>Worked with GitLab CI pipelines and Coverity static analysis</li>
+        <li>Collaborated cross-functionally on data analysis and device debug</li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <div class="experience-header">
+        <h3>Micron — Semiconductor Product Engineer</h3>
+        <div class="experience-meta">Boise, ID · Jul 2018 – Dec 2023</div>
+      </div>
+      <ul>
+        <li>Post-silicon design characterization and validation for nonvolatile memory chips</li>
+        <li>Developed automated bench test platforms using Python and Perl</li>
+        <li>Built visualization and analysis tools for silicon data using Plotly</li>
+        <li>Performed silicon bench debug using oscilloscopes and logic analyzers</li>
+        <li>Executed test plans validating new design features</li>
+        <li>Characterized nonvolatile memory peak power consumption for power optimization</li>
+        <li>Conducted root-cause failure analysis post-silicon</li>
+        <li>Supported future pathfinding and competitor analysis</li>
+        <li>Contributing author for Micron internal technical leadership papers</li>
+        <li>
+          Patent:
+          <a href="https://patents.justia.com/patent/11216219" target="_blank">
+            US 11,216,219 — Management of peak current of memory dies
+          </a>
+          (2022)
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> John Paul Aglubat · Built with plain HTML & CSS
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

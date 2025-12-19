@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canny Edge Detection - John Paul Aglubat</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Canny Edge Detection</h1>
+    <nav>
+      <a href="/index.html">← Back to Home</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Description</h2>
+    <p>
+      This Canny Edge Detection uses 5 distinct algorithm kernels: Gaussian Blur, Sobel, Non-Maximum Suppression, Double-Threshold, Hysteresis and was implemented in CUDA C. This project was done back in the Autumn of 2024 as part of my EE P 524: Applied GPU Computing class in the University of Washington.
+    </p>
+  </section>
+
+  <section>
+    <h2>Resulting Image after each Kernel</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:1rem;align-items:flex-start;">
+        <figure style="flex:1 1 calc(33% - 1rem);min-width:200px;text-align:center;margin:0;">
+            <img src="/images/canny_edge/hw2_testimage1.png" alt="Original Image" style="max-width:100%;height:auto;display:block;margin:0 auto;" />
+            <figcaption>Original Image</figcaption>
+        </figure>
+
+        <figure style="flex:1 1 calc(33% - 1rem);min-width:200px;text-align:center;margin:0;">
+            <img src="/images/canny_edge/hw2_testimage1_blur_gpu_shr.png" alt="Gaussian Blur" style="max-width:100%;height:auto;display:block;margin:0 auto;" />
+            <figcaption>Gaussian Blur</figcaption>
+        </figure>
+
+        <figure style="flex:1 1 calc(33% - 1rem);min-width:200px;text-align:center;margin:0;">
+            <img src="/images/canny_edge/hw2_testimage1_gradient_gpu_shr.png" alt="Sobel" style="max-width:100%;height:auto;display:block;margin:0 auto;" />
+            <figcaption>Sobel</figcaption>
+        </figure>
+
+        <figure style="flex:1 1 calc(33% - 1rem);min-width:200px;text-align:center;margin:0;">
+            <img src="/images/canny_edge/hw2_testimage1_nonmax_gpu_shr.png" alt="Non-Maximum Suppression" style="max-width:100%;height:auto;display:block;margin:0 auto;" />
+            <figcaption>Non-Maximum Suppression</figcaption>
+        </figure>
+
+        <figure style="flex:1 1 calc(33% - 1rem);min-width:200px;text-align:center;margin:0;">
+            <img src="/images/canny_edge/hw2_testimage1_dthreshold_gpu_shr.png" alt="Double-Threshold" style="max-width:100%;height:auto;display:block;margin:0 auto;" />
+            <figcaption>Double-Threshold</figcaption>
+        </figure>
+
+        <figure style="flex:1 1 calc(33% - 1rem);min-width:200px;text-align:center;margin:0;">
+            <img src="/images/canny_edge/hw2_testimage1_hysteresis_final_gpu_shr.png" alt="Hysteresis and Final Image" style="max-width:100%;height:auto;display:block;margin:0 auto;" />
+            <figcaption>Hysteresis and Final Image</figcaption>
+        </figure>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> John Paul Aglubat · Built with plain HTML & CSS
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Academics – John Paul Aglubat</title>
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    .edu-block { margin-bottom: 3rem; }
+    .edu-meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem; }
+    .course-list {
+      columns: 2;
+      column-gap: 2.5rem;
+      padding-left: 1.2rem;
+    }
+    .course-list li {
+      margin-bottom: 0.45rem;
+      break-inside: avoid;
+    }
+    @media (max-width: 800px) {
+      .course-list { columns: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Academics</h1>
+  <p>List of education.</p>
+  <nav>
+    <a href="/index.html">← Back to Home</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Education</h2>
+
+  <div class="edu-block">
+    <h3>University of Washington: Masters (ongoing)</h3>
+    <div class="edu-meta">
+      Master of Science Electrical & Computer Engineering · Seattle, WA · Expected 2027
+    </div>
+
+    <ul class="course-list">
+      <li>Analytical Methods for Electrical & Computer Engineering (EE P 502)</li>
+      <li>Applied GPU Computing (EE P 524)</li>
+      <li>Neurocomputing and Engineering Laboratory (EE 564)</li>
+      <li>Applications of Sensing and Control (EE P 523)</li>
+      <li>Quantum Mechanics and Computing (EE P 521)</li>
+    </ul>
+  </div>
+
+  <div class="edu-block">
+    <h3>University of Washington: Bachelors</h3>
+    <div class="edu-meta">
+      Bachelor of Science in Electrical Engineering · Seattle, WA · 2016 – 2018
+    </div>
+
+    <ul class="course-list">
+      <li>Circuit Theory (EE 233)</li>
+      <li>Continuous-Time Linear Systems (EE 235)</li>
+      <li>Digital Circuits and Systems (EE 271)</li>
+      <li>Devices and Circuits I (EE 331)</li>
+      <li>Devices and Circuits II (EE 332)</li>
+      <li>Applied Electromagnetics (EE 361)</li>
+      <li>Design of Digital Circuits and Systems (EE 371)</li>
+      <li>Advanced Technical Writing in Electrical Engineering (EE 393)</li>
+      <li>Professional Issues in Electrical Engineering (EE 398)</li>
+      <li>Computer Architecture I (EE 469)</li>
+      <li>Introduction to Embedded Systems (EE 474)</li>
+      <li>Digital Integrated Circuit Design (EE 476)</li>
+      <li>VLSI Design II (EE 477)</li>
+      <li>Semiconductor Devices (EE 482)</li>
+      <li>Engineering Entrepreneurship: Systems and Design (EE 496)</li>
+      <li>Integrated Systems Project Design Capstone (EE 437)</li>
+      <li>VLSI Design III (EE 526)</li>
+      <li>Microfabrication (EE 527)</li>
+      <li>Data Structures and Algorithms (CSE 373)</li>
+      <li>Advanced Topics in Animation (CSE 464)</li>
+      <li>Beginning Scientific Computing (AMATH 301)</li>
+      <li>Advanced Multivariable Calculus I (MATH 324)</li>
+      <li>Introduction to Differential Equations and Applications (AMATH 351)</li>
+      <li>Probability and Statistics for Engineers (INDE 315)</li>
+      <li>Introduction to Visualization and Computer-Aided Design (ME 123)</li>
+    </ul>
+  </div>
+
+  <div class="edu-block">
+    <h3>Edmonds Community College</h3>
+    <div class="edu-meta">
+      C/C++ Developer Certificate and 2-Year Transfer · Lynnwood, WA · 2013 – 2016
+    </div>
+
+    <ul class="course-list">
+      <li>Introduction to Programming (CS 115)</li>
+      <li>Computer Science I: C++ Programming (CS& 131)</li>
+      <li>Computer Science II: C++ Programming (CS 132)</li>
+      <li>Computer Science III: C++ Programming (CS 133)</li>
+      <li>Data Structures and Algorithms (CS 285)</li>
+      <li>Android Application Development (CS 240)</li>
+      <li>Computer Game Development I (CS 161)</li>
+      <li>3D Game Project</li>
+      <li>Calculus III (MATH& 153)</li>
+      <li>Differential Equations (MATH 271)</li>
+      <li>Linear Algebra (MATH 272)</li>
+      <li>Electrical Circuits (ENGR& 204)</li>
+      <li>Engineering Physics I–III with Laboratory (PHYS& 221, 222, 233)</li>
+      <li>General Chemistry I–III with Laboratory (CHEM& 161–163)</li>
+      <li>English Composition I (ENGL& 101)</li>
+      <li>Introduction to Technical Writing (ENGR 231)</li>
+      <li>Introduction to Audio Engineering (MUSC 190)</li>
+      <li>Japanese III (JAPN& 123)</li>
+      <li>Microeconomics (ECON& 201)</li>
+      <li>Macroeconomics (ECON& 202)</li>
+    </ul>
+  </div>
+
+</section>
+
+<footer>
+  © <span id="year"></span> John Paul Aglubat · Built with plain HTML & CSS
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

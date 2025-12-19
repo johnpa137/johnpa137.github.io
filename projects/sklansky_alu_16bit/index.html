@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sklansky ALU - John Paul Aglubat</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Sklansky ALU</h1>
+    <nav>
+      <a href="/index.html">← Back to Home</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Description</h2>
+    <p>
+      A 16-bit Arithmetic Logic Unit (ALU) designed using the Sklansky Adder architecture, which a type of tree adder. The ALU supports Addition, Subtraction, the AND and XOR operations. It was designed and laid out in the TSMC 65nm node in Cadence Virtuoso. It has a critical path delay of 660ps and a total area of 1500 µm². This project was done back in 2017 as part of my EE 476: Digital VLSI I class in the University of Washington.
+    </p>
+  </section>
+
+  <section>
+    <h2>Layout Snapshot</h2>
+    <img src="/images/sklansky_alu_16bit_layout.png" alt="Sklansky ALU Layout" />
+  </section>
+
+  <footer>
+    © <span id="year"></span> John Paul Aglubat · Built with plain HTML & CSS
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

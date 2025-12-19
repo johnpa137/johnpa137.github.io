@@ -1,0 +1,120 @@
+
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #38bdf8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(180deg, #020617, var(--bg));
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 3rem;
+}
+
+header h1 {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  margin: 0 0 0.5rem;
+}
+
+header p {
+  color: var(--muted);
+  max-width: 600px;
+}
+
+nav {
+  margin-top: 1.5rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0.0rem 0.0rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  color: var(--muted);
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1.5rem 3rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.5rem; /* spacing between rows */
+  margin-bottom: 2rem;
+}
+
+td {
+  padding: 0.5rem 0.25rem;
+  vertical-align: top;
+}
+
+td:first-child {
+  width: 30%;
+  font-weight: bold;
+  /* Removed the accent color */
+  color: var(--text);
+}
+
+td:last-child {
+  width: 70%;
+}
